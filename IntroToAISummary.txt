@@ -1,0 +1,53 @@
+ /$$$$$$             /$$                      /$$$$$$$$         /$$$$$$  /$$$$$$
+|_  $$_/            | $$                     |__  $$__/        /$$__  $$|_  $$_/
+  | $$   /$$$$$$$  /$$$$$$    /$$$$$$   /$$$$$$ | $$  /$$$$$$ | $$  \ $$  | $$  
+  | $$  | $$__  $$|_  $$_/   /$$__  $$ /$$__  $$| $$ /$$__  $$| $$$$$$$$  | $$  
+  | $$  | $$  \ $$  | $$    | $$  \__/| $$  \ $$| $$| $$  \ $$| $$__  $$  | $$  
+  | $$  | $$  | $$  | $$ /$$| $$      | $$  | $$| $$| $$  | $$| $$  | $$  | $$  
+ /$$$$$$| $$  | $$  |  $$$$/| $$      |  $$$$$$/| $$|  $$$$$$/| $$  | $$ /$$$$$$
+|______/|__/  |__/   \___/  |__/       \______/ |__/ \______/ |__/  |__/|______/
+                                                                                
+                                                                                
+---------------------------------------------- 	
+01_Intro to AI Jupiter Notebook
+
+AI VS ML
+
+Supervised Learning		--	
+Unupervised Learning	--	
+
+Linear Regression	--	
+Logistic Regression
+
+Дерево рішеннь	--	
+Випадкові ліси	--	
+Метод опорних веткорів (SVM)	--	
+
+
+
+Jupiter Notebook	--	сережлвище для створення коду моделей
+
+python --version
+py -m venv .venv
+
+.venv\Scripts\activate.bat
+python.exe -m pip install --upgrade pip
+pip install jupyter
+
+---------------------------------------------- 	
+02_numpy
+
+	python --version
+	py -m venv .venv
+	
+	.venv\Scripts\activate.bat
+	python.exe -m pip install --upgrade pip
+	pip install numpy
+	
+	py main.py
+
+print("-- Про масив можна отримати наступні дані ")
+print("Shape", myArray.shape) #Розмір масиву
+print("ndim", myArray.ndim) #Кількість вимірів у масиві
+print("dtype", myArray.dtype) #тип даних у елементах
+print("size", myArray.size) #кількість усіх елементів
