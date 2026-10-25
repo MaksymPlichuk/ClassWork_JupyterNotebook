@@ -51,3 +51,50 @@ print("Shape", myArray.shape) #Розмір масиву
 print("ndim", myArray.ndim) #Кількість вимірів у масиві
 print("dtype", myArray.dtype) #тип даних у елементах
 print("size", myArray.size) #кількість усіх елементів
+
+---------------------------------------------- 	
+03_pandas
+
+Pandas — бібліотека Python для роботи з таблицями, CSV/Excel-файлами, базами даних, часовими рядами та наборами даних для машинного навчання
+
+
+	python --version
+	py -m venv .venv
+	
+	.venv\Scripts\activate.bat
+	python.exe -m pip install --upgrade pip
+	pip install numpy
+	pip install pandas
+	
+	py main.py
+
+			//згенерує 10 днів від 2024-01-01
+sales_data = {'Дата': pd.date_range(start='2024-01-01', periods=10, freq='D'),
+				'Продажі': np.random.randint(100, 1000, size=10) }
+
+df = pd.DataFrame(sales_data)	--	перетворити на таблицю задопомогою numpy
+print(df);
+
+# Запис у csv
+print("== Запис у CSV ==")
+df_sales.to_csv('sales.csv', index=False, encoding='utf-8')
+print("Збережено у CSV")
+print()
+
+#Читання із csv
+print("=== Читання CSV ===")
+df_sales = pd.read_csv('sales.csv')
+print("Прочитані дані з файлу:")
+print(df_sales.head(3))
+print()
+
+Головна різниця: NumPy — для числових масивів і математичних обчислень, Pandas — для таблиць і аналізу даних. 
+ Pandas значною мірою використовує NumPy під капотом.
+ 
+---------------------------------------------- 	
+04_Matplotlib
+
+Matplotlib	--	бібліотека для побудови графіків
+
+---------------------------------------------- 	
+05_
